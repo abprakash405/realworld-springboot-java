@@ -51,6 +51,16 @@ jobs:
         #with:
           #username: raeperd
           #password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: Azure Container Registry Login
+        uses: Azure/docker-login@v1
+        with:
+          # Container registry username
+          username: ${{ secrets.AZURE_USERNAME }}
+          # Container registry password
+          password: ${{ secrets.AZURE_PASS }}
+          # Container registry server url
+          login-server: myazureregistry12s.azurecr.io
+    
       - name: Get branch name (merge)
         if: github.event_name != 'pull_request'
         shell: bash
