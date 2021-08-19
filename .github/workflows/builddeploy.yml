@@ -35,7 +35,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'appservicespringbootjava'
+          app-name: 'backendserviceaefsdf'
           slot-name: 'production'
           publish-profile: ${{ secrets.AzureAppService_PublishProfile_448362a2c67d400898c06bc52ba6b6c6 }}
           package: 'build/libs/*.jar'
