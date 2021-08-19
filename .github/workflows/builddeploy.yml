@@ -37,5 +37,5 @@ jobs:
         with:
           app-name: 'appservicespringbootjava'
           slot-name: 'production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_b7e3bd5054dd469a8704e54da6729d8e }}
+          publish-profile: ${{ secrets.AzureAppService_PublishProfile_448362a2c67d400898c06bc52ba6b6c6 }}
           package: 'build/libs/*.jar'
